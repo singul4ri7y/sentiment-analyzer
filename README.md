@@ -20,7 +20,7 @@ Okay, you are ready to rock!
  - Then you have to generate the Dataset. After entering the virtual environment, use `python gends.py`. It will take some time, as it will download all the reviews and generate the datasets.
  - Finally, after the dataset generation is complete, use `python repl.py` to get to the REPL (Read-Evaluate-Print-Loop), where you type your review to get the sentiment.
  
- ```bash
+```
 $ python repl.py
 Training Naive Bayes...
 Initializing vectorizer...
@@ -29,7 +29,7 @@ Entering REPL...
 
 >>> When I started watching the movie, I thought, well you know what it won't be that much fun. But, god wasn't I wrong! After 25min of the movie, I got completely hooked. The character development in the middle and story progression is simple mesmerizing. The actors also played an awesome role playing those characters, they seemed real. Completely worth watching!
 -> Your review is positive! Good job.
- ```
+```
 
 **Note:** Type `.exit` to exit the REPL.
 
