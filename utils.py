@@ -1,16 +1,18 @@
 ## Utilities for NLP.
 
 import nltk
+from numba import jit
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
-nltk.download('punkt')
-nltk.download('stopwords')
+nltk.download('punkt', quiet = True)
+nltk.download('stopwords', quiet = True)
 
 # @data: string
 # Returns a NLP processed string.
 
+@jit(forceobj = True, fastmath = True, parallel = True)
 def nlp_ize(data):
     # Tokenize the string.
 

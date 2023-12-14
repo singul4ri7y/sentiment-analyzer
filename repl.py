@@ -33,7 +33,7 @@ mnb = MultinomialNB()
 # Train the Bayes.
 
 print('Training Naive Bayes...')
-mnb.fit(train_review, train_sentiment)
+mnb.fit(train_review, train_sentiment.ravel())
 
 print('Initializing vectorizer...')
 cv = CountVectorizer(vocabulary = feature_names)
