@@ -46,7 +46,7 @@ lb = LabelBinarizer()
 
 lb.fit([ 'positive', 'negative' ])
 
-print('Entering REPL...')
+print('Entering REPL...', end = '\n\n')
 
 while True: 
     print('>>> ', end = '')

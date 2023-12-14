@@ -36,7 +36,7 @@ if not os.path.exists('dataset/ds_review.npz') or not os.path.exists('dataset/fe
 
     # Vectorize.
 
-    print('Appying vectorizer...')
+    print('Applying vectorizer...')
     cv = CountVectorizer(min_df = 0.0, max_df = 1.0, binary = False, ngram_range = (1, 3))
 
     cv_train_data = cv.fit_transform(data.review)
